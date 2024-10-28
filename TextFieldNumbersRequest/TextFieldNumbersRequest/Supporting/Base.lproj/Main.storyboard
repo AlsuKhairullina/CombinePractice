@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldNumbersRequest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите число" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z1U-Hc-mjF">
+                                <rect key="frame" x="20" y="421.66666666666669" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4g-fv-nW9">
+                                <rect key="frame" x="144.33333333333334" y="484" width="104.66666666666666" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Умножить"/>
+                                <connections>
+                                    <action selector="multiplyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLo-NB-FJt"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PI4-Ze-SRs">
+                                <rect key="frame" x="20" y="252.66666666666666" width="353" height="78.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzo-Us-KrV">
+                                        <rect key="frame" x="134.66666666666666" y="0.0" width="83.666666666666657" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCk-Ms-RQf">
+                                        <rect key="frame" x="151.66666666666666" y="28.333333333333343" width="50" height="50"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PI4-Ze-SRs" secondAttribute="trailing" constant="20" id="4A4-33-O03"/>
+                            <constraint firstItem="PI4-Ze-SRs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5X9-AO-mnp"/>
+                            <constraint firstItem="Y4g-fv-nW9" firstAttribute="top" secondItem="Z1U-Hc-mjF" secondAttribute="bottom" constant="28.333333333333314" id="DqG-WW-cYs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z1U-Hc-mjF" secondAttribute="trailing" constant="20" id="H1y-mK-lXW"/>
+                            <constraint firstItem="Z1U-Hc-mjF" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="HjG-O4-Gar"/>
+                            <constraint firstItem="Z1U-Hc-mjF" firstAttribute="top" secondItem="PI4-Ze-SRs" secondAttribute="bottom" constant="90.666666666666686" id="NAl-og-au6"/>
+                            <constraint firstItem="PI4-Ze-SRs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Wed-QL-XtA"/>
+                            <constraint firstItem="Y4g-fv-nW9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fL8-zr-3bf"/>
+                            <constraint firstItem="Z1U-Hc-mjF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nDp-Qh-0Tz"/>
+                            <constraint firstItem="Z1U-Hc-mjF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nhV-Z3-OBd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="Z1U-Hc-mjF" id="1UX-0U-SmO"/>
+                        <outlet property="multiplyButton" destination="Y4g-fv-nW9" id="XyX-xD-4nA"/>
+                        <outlet property="resultLabel" destination="qCk-Ms-RQf" id="xiX-Df-L66"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
