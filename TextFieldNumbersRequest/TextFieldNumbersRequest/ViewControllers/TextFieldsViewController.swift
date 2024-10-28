@@ -1,7 +1,14 @@
+//
+//  TextFieldsViewController.swift
+//  TextFieldNumbersRequest
+//
+//  Created by Алсу Хайруллина on 28.10.2024.
+//
+
 import UIKit
 import Combine
 
-class ViewController: UIViewController {
+class TextFieldsViewController: UIViewController {
 
     //MARK: Views
     @IBOutlet weak var resultLabel: UILabel!
@@ -25,7 +32,7 @@ class ViewController: UIViewController {
 }
 
 //MARK: - Private Methods
-private extension ViewController {
+private extension TextFieldsViewController {
     
     ///Добавляет action для отслеживания ввода текста
     func setupTextField() {
@@ -50,3 +57,4 @@ private extension ViewController {
         .eraseToAnyPublisher()
     }
 }
+

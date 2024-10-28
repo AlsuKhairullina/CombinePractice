@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148FA9A92CD013630053E8D2 /* TextFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148FA9A82CD013630053E8D2 /* TextFieldsViewController.swift */; };
+		148FA9AB2CD013880053E8D2 /* SwitchesAndButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148FA9AA2CD013880053E8D2 /* SwitchesAndButtonViewController.swift */; };
+		148FA9B02CD016140053E8D2 /* TextFieldProblem in Resources */ = {isa = PBXBuildFile; fileRef = 148FA9AF2CD016140053E8D2 /* TextFieldProblem */; };
+		148FA9B22CD0162F0053E8D2 /* SwitchButtonsProblem in Resources */ = {isa = PBXBuildFile; fileRef = 148FA9B12CD016240053E8D2 /* SwitchButtonsProblem */; };
 		944C5BBB2B165B6500D4391A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C5BBA2B165B6500D4391A /* AppDelegate.swift */; };
 		944C5BBD2B165B6500D4391A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C5BBC2B165B6500D4391A /* SceneDelegate.swift */; };
-		944C5BBF2B165B6500D4391A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C5BBE2B165B6500D4391A /* ViewController.swift */; };
 		944C5BC22B165B6500D4391A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944C5BC02B165B6500D4391A /* Main.storyboard */; };
 		944C5BC42B165B6600D4391A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944C5BC32B165B6600D4391A /* Assets.xcassets */; };
 		944C5BC72B165B6600D4391A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944C5BC52B165B6600D4391A /* LaunchScreen.storyboard */; };
-		944C5BD02B16664600D4391A /* ProblemCondition in Resources */ = {isa = PBXBuildFile; fileRef = 944C5BCF2B16664600D4391A /* ProblemCondition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		148FA9A82CD013630053E8D2 /* TextFieldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsViewController.swift; sourceTree = "<group>"; };
+		148FA9AA2CD013880053E8D2 /* SwitchesAndButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchesAndButtonViewController.swift; sourceTree = "<group>"; };
+		148FA9AF2CD016140053E8D2 /* TextFieldProblem */ = {isa = PBXFileReference; lastKnownFileType = text; path = TextFieldProblem; sourceTree = "<group>"; };
+		148FA9B12CD016240053E8D2 /* SwitchButtonsProblem */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwitchButtonsProblem; sourceTree = "<group>"; };
 		944C5BB72B165B6500D4391A /* TextFieldNumbersRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldNumbersRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		944C5BBA2B165B6500D4391A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		944C5BBC2B165B6500D4391A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		944C5BBE2B165B6500D4391A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		944C5BC12B165B6500D4391A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		944C5BC32B165B6600D4391A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		944C5BC62B165B6600D4391A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		944C5BC82B165B6600D4391A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		944C5BCF2B16664600D4391A /* ProblemCondition */ = {isa = PBXFileReference; lastKnownFileType = text; path = ProblemCondition; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		148FA9A72CD0130F0053E8D2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				148FA9A82CD013630053E8D2 /* TextFieldsViewController.swift */,
+				148FA9AA2CD013880053E8D2 /* SwitchesAndButtonViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		148FA9AC2CD014720053E8D2 /* TaskDescription */ = {
+			isa = PBXGroup;
+			children = (
+				148FA9B12CD016240053E8D2 /* SwitchButtonsProblem */,
+				148FA9AF2CD016140053E8D2 /* TextFieldProblem */,
+			);
+			path = TaskDescription;
+			sourceTree = "<group>";
+		};
 		944C5BAE2B165B6500D4391A = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +80,9 @@
 		944C5BB92B165B6500D4391A /* TextFieldNumbersRequest */ = {
 			isa = PBXGroup;
 			children = (
+				148FA9AC2CD014720053E8D2 /* TaskDescription */,
+				148FA9A72CD0130F0053E8D2 /* ViewControllers */,
 				944C5BCE2B1665DF00D4391A /* Supporting */,
-				944C5BBE2B165B6500D4391A /* ViewController.swift */,
-				944C5BCF2B16664600D4391A /* ProblemCondition */,
 			);
 			path = TextFieldNumbersRequest;
 			sourceTree = "<group>";
@@ -136,7 +158,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944C5BD02B16664600D4391A /* ProblemCondition in Resources */,
+				148FA9B22CD0162F0053E8D2 /* SwitchButtonsProblem in Resources */,
+				148FA9B02CD016140053E8D2 /* TextFieldProblem in Resources */,
 				944C5BC72B165B6600D4391A /* LaunchScreen.storyboard in Resources */,
 				944C5BC42B165B6600D4391A /* Assets.xcassets in Resources */,
 				944C5BC22B165B6500D4391A /* Main.storyboard in Resources */,
@@ -150,7 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944C5BBF2B165B6500D4391A /* ViewController.swift in Sources */,
+				148FA9AB2CD013880053E8D2 /* SwitchesAndButtonViewController.swift in Sources */,
+				148FA9A92CD013630053E8D2 /* TextFieldsViewController.swift in Sources */,
 				944C5BBB2B165B6500D4391A /* AppDelegate.swift in Sources */,
 				944C5BBD2B165B6500D4391A /* SceneDelegate.swift in Sources */,
 			);
