@@ -23,11 +23,19 @@ class TextFieldsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTextField()
+        setupBindings()
     }
 
     //MARK: - Actions
     @IBAction func multiplyButtonTapped(_ sender: UIButton) {
+        guard let text = inputTextField.text, let number = Int(text) else { return }
         
+        asyncMultiplyByTwo(number: number)
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] result in
+                self?.resultLabel.text = "\(result)"
+            }
+            .store(in: &cancellables)
     }
 }
 
@@ -43,6 +51,28 @@ private extension TextFieldsViewController {
             },
             for: .editingChanged
         )
+    }
+    
+    func setupBindings() {
+        inputTextSubject
+            .sink { [weak self] text in
+                guard let self = self else { return }
+                
+                if let text = text, Int(text) != nil {
+                    self.setTextFieldBorderColor(.clear)
+                    self.multiplyButton.isEnabled = true
+                } else {
+                    self.setTextFieldBorderColor(.red)
+                    self.multiplyButton.isEnabled = false
+                }
+            }
+            .store(in: &cancellables)
+    }
+    
+    func setTextFieldBorderColor(_ color: UIColor) {
+        inputTextField.layer.borderColor = color.cgColor
+        inputTextField.layer.borderWidth = color == .clear ? 0 : 0.5
+        inputTextField.layer.cornerRadius = 5
     }
     
     //Асинхронно выполняет умножение переданного числа на 2 со случайной задержкой до 3 секунд
